@@ -1,0 +1,26 @@
+{
+  "name": "easier-auth",
+  "version": "0.0.1-dev",
+  "description": "A library for making authentication easier.",
+  "exports": {
+    "./package.json": "./package.json",
+    "./server": {
+      "default": "./dist/server.js",
+      "import": "./dist/server.mjs",
+      "require": "./dist/server.js"
+    }
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup"
+  },
+  "keywords": [
+    "authentication",
+    "auth"
+  ],
+  "author": "Frolleks",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^7.0.0"
+  }
+}
